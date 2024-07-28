@@ -1,6 +1,7 @@
 #include "Handler.h"
 #include <cstdlib>
 #include <ctime>
+#include <iostream>
 
 GameHandler::GameHandler(){
         grid = Grid();
@@ -19,6 +20,9 @@ GameHandler::GameHandler(){
 
         clearRowSound = LoadSound("assets/sounds/clear.wav");
         GameOverSound = LoadSound("assets/sounds/GameOver.mp3");
+
+        moveDownTimer = 0.0f;
+        moveDownInterval = 0.15f;
 }
 
 GameHandler::~GameHandler(){
@@ -130,30 +134,31 @@ void GameHandler::Draw(){
     }
 }
 
-void GameHandler::InputHandler(){
+void GameHandler::InputHandler(float deltaTime){
     int keyInput = GetKeyPressed();
+
     if(gameOver && keyInput == KEY_R){
         gameOver = false;
         Restart();
     }
-    switch (keyInput)
-    {
-    case KEY_LEFT:
-        moveLeft();
-        break;
 
-    case KEY_RIGHT:
-        moveRight();
-        break;
-
-    case KEY_DOWN:
-        moveDown();
-        break;
-    case KEY_UP:
-        Rotate();
-    default:
-        break;
+    if (IsKeyDown(KEY_DOWN)) {
+        moveDownTimer += deltaTime;
+        if (moveDownTimer >= moveDownInterval) {
+            moveDown();
+            moveDownTimer = 0.0f;
+        }
     }
+
+    if(keyInput == KEY_LEFT)
+        moveLeft();
+    
+    if(keyInput == KEY_RIGHT)
+        moveRight();
+    
+    if(keyInput == KEY_UP)
+        Rotate();
+    
 }
 
 void GameHandler::moveLeft(){

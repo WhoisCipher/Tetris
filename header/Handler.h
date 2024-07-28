@@ -6,7 +6,7 @@ class GameHandler {
 public:
     GameHandler();
     ~GameHandler();
-    void InputHandler();
+    void InputHandler(float);
     void moveLeft();
     void moveRight();
     void moveDown();
@@ -25,14 +25,16 @@ public:
 
 private:
     Grid grid;
+
     bool gameOver;
+    
+    float moveDownTimer;
+    float moveDownInterval; 
+
     vector<Block> blocks;
     Block currBlock;
     Block nextBlock;
-    float moveLeftTime;
-    float moveRightTime;
-    float moveDownTime;
-    float moveInterval;
+
     Sound clearRowSound;
     Sound GameOverSound;
 };
