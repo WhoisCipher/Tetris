@@ -34,10 +34,7 @@ The game has 7 different tetrominoes that each have a distinct color. Each tetro
     ```sh
     make
     ```
-
-## Usage
-
-To run the game, simply execute the compiled program:
+4. To run the game, simply execute the compiled program:
 ```sh
 ./tetris
 ```
@@ -48,4 +45,6 @@ To run the game, simply execute the compiled program:
 - Down Arrow: Speed up piece
 - Space: Drop piece
 
+## Contact ✉️
 
+For any questions or feedback, please reach out to me at [abdullah@gmail.com](mailto:abdulahshoiab@gmail.com).
