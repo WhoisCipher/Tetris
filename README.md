@@ -4,11 +4,6 @@ A classic Tetris game built with C++ and raylib.
 
 ![Tetris Title](assets/Tetris%20Game%20Title%20Cover.png)
 
-## Table of Contents
-- [Features](#features)
-- [Installation](#installation)
-- [Controls](#controls)
-
 ![GameScreenShot](assets/TetrisGameSS.png)
 
 ## Features
