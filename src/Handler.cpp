@@ -158,6 +158,8 @@ void GameHandler::InputHandler(float deltaTime){
     
     if(keyInput == KEY_UP)
         Rotate();
+    if(keyInput == KEY_SPACE)
+        Drop();
     
 }
 
@@ -192,5 +194,18 @@ void GameHandler::Rotate(){
         currBlock.Rotate();
         if(boundBlockToGrid() || !SpaceforBlock())
             currBlock.UndoRotate();
+    }
+}
+
+void GameHandler::Drop(){
+    if(!gameOver){
+        while(!boundBlockToGrid()){
+            if(SpaceforBlock())
+                currBlock.Move(0, 1);
+            else
+                break;
+        }
+        currBlock.Move(0,-1);
+        LockBlock();
     }
 }

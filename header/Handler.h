@@ -11,6 +11,7 @@ public:
     void moveRight();
     void moveDown();
     void Rotate();
+    void Drop();
     void LockBlock();
     void Restart();
     void Draw();
