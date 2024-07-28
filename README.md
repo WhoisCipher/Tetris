@@ -22,7 +22,7 @@ A classic Tetris game built with C++ and raylib.
 
 The game has 7 different tetrominoes that each have a distinct color. Each tetromino appears once every cycle and randomly each time
 
-[Tetriminos](assets/tetrominos/tetrominoes.png)
+![Tetriminos](assets/tetrominos/tetrominoes.png)
 
 ## Installation
 
