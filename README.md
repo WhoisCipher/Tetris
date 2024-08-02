@@ -21,6 +21,11 @@ The game has 7 different tetrominoes that each have a distinct color. Each tetro
 
 ## Installation
 
+### Windows
+
+**Download and run the setup:**
+    Download the game installer from [this link](TetrisSetup.exe) and run the setup to install the game.
+
 ### Linux
 
 1. **Clone the repository:**
@@ -41,11 +46,6 @@ The game has 7 different tetrominoes that each have a distinct color. Each tetro
     ```sh
     ./tetris
     ```
-
-### Windows
-
-1. **Download and run the setup:**
-    Download the game installer from [this link](TetrisSetup.exe) and run the setup to install the game.
 
 ### macOS
 
