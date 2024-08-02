@@ -21,29 +21,52 @@ The game has 7 different tetrominoes that each have a distinct color. Each tetro
 
 ## Installation
 
-*Linux*
+### Linux
 
-1. **Clone the repository**
+1. **Clone the repository:**
     ```sh
     git clone https://github.com/WhoisCipher/Tetris.git
-    cd tetris
+    cd Tetris
     ```
 
-2. **Ensure raylib is installed**
-    Please make sure your device has raylib installed. For further consultation, please visit [raylib](https://github.com/raysan5/raylib) for installation instructions.
+2. **Install raylib:**
+    Ensure raylib is installed on your device. Visit the [raylib installation guide](https://github.com/raysan5/raylib) for detailed instructions.
 
-3. **Build the project**
+3. **Build the project:**
     ```sh
     make
     ```
-4. To run the game, simply execute the compiled program:
-```sh
-./tetris
-```
 
-*Windows*
+4. **Run the game:**
+    ```sh
+    ./tetris
+    ```
 
-For Windows run this [Setup](TetrisSetup.exe) 
+### Windows
+
+1. **Download and run the setup:**
+    Download the game installer from [this link](TetrisSetup.exe) and run the setup to install the game.
+
+### macOS
+
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/WhoisCipher/Tetris.git
+    cd Tetris
+    ```
+
+2. **Install raylib:**
+    Make sure raylib is installed on your device. Follow the [raylib installation guide](https://github.com/raysan5/raylib) for macOS-specific instructions.
+
+3. **Build the project:**
+    ```sh
+    make
+    ```
+
+4. **Run the game:**
+    ```sh
+    ./tetris
+    ```
 
 # Controls
 - Left Arrow: Move piece left
