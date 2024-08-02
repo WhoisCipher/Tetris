@@ -43,7 +43,7 @@ The game has 7 different tetrominoes that each have a distinct color. Each tetro
 
 *Windows*
 
-For Windows run this ![Setup](TetrisSetup.exe) 
+For Windows run this [Setup](TetrisSetup.exe) 
 
 # Controls
 - Left Arrow: Move piece left
