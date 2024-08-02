@@ -21,6 +21,8 @@ The game has 7 different tetrominoes that each have a distinct color. Each tetro
 
 ## Installation
 
+*Linux*
+
 1. **Clone the repository**
     ```sh
     git clone https://github.com/WhoisCipher/Tetris.git
@@ -38,6 +40,11 @@ The game has 7 different tetrominoes that each have a distinct color. Each tetro
 ```sh
 ./tetris
 ```
+
+*Windows*
+
+For Windows run this ![Setup](TetrisSetup.exe) 
+
 # Controls
 - Left Arrow: Move piece left
 - Right Arrow: Move piece right
